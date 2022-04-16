@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/hmQZ7Mq/service-1.png",
+      "prics": 40,
+      "name": "Cox's Bazar",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/1mq4n4L/service-2.png",
+      "prics": 35,
+      "name": "Bandarban",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/KmcPbKD/service-3.png",
+      "prics": 20,
+      "name": "Saint-Martin",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
+    }
+  ]
