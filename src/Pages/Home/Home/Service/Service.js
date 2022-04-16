@@ -9,13 +9,13 @@ const Service = ({ service }) => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className='service'>
+        <div id='services' className='service'>
             <img src={img} alt="" />
             <div className='service-content'>
                 <h2>{name}</h2>
                 <p>{prices}</p>
                 <p><small>{description}</small></p>
-                <button onClick={()=>handlenavigateToServiceDetail(id)}>Book Now</button>
+                <button className='service-btn' onClick={()=>handlenavigateToServiceDetail(id)}>Book Now</button>
             </div>
         </div>
     );

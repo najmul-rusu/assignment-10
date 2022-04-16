@@ -9,3 +9,10 @@
 .service-content{
     padding: 10px;
 }
+.service-btn{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
