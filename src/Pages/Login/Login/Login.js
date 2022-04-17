@@ -9,11 +9,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-    const emailRef =useRef('')
+    const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate();
-    
-    const location =useLocation();
+
+    const location = useLocation();
     let from = location.state?.from?.pathname || "/";
     let errorElement;
     const [
@@ -21,35 +21,40 @@ const Login = () => {
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
 
-      
-      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-      if (loading) {
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    if (loading) {
         return <Loading></Loading>
     }
-      if (user) {
+    if (user) {
         navigate(from, { replace: true });
-      }
-      if (error) {
+    }
+    if (error) {
         errorElement = <div>
             <p className='text-danger'> Error: {error.message}</p>
         </div>
     }
-    const handleSubmit =event =>{
+    const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
-        const password=passwordRef.current.value;
-        signInWithEmailAndPassword(email,password)
+        const password = passwordRef.current.value;
+        signInWithEmailAndPassword(email, password)
     }
-    const navigateRegister =event =>{
+    const navigateRegister = event => {
         navigate('/register')
     }
 
-    const resetPassword =async () =>{
+    const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-          alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else{
+            toast('Please enter your email address')
+        }
     }
 
     return (
@@ -57,20 +62,21 @@ const Login = () => {
             <h2 className='text-center'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
+                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
                     Login
                 </Button>
             </Form>
             {errorElement}
-            <p>You don't have an account? <Link to='/register ' className='text-danger pe-auto text-decoration-none 'onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget your password? <Link to='/register ' className='text-danger pe-auto text-decoration-none 'onClick={resetPassword}>Reset Password</Link></p>
+            <p>You don't have an account? <Link to='/register ' className='text-danger pe-auto text-decoration-none ' onClick={navigateRegister}>Please Register</Link></p>
+            <p>Forget your password? <button to='/register ' className='btn btn-link text-danger pe-auto text-decoration-none ' onClick={resetPassword}>Reset Password</button></p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
 
     );
