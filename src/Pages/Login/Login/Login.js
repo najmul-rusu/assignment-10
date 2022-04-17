@@ -3,7 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../Social/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef =useRef('')
@@ -20,7 +23,11 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
+      
       const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+      if (loading) {
+        return <Loading></Loading>
+    }
       if (user) {
         navigate(from, { replace: true });
       }
@@ -62,11 +69,11 @@ const Login = () => {
             </Form>
             {errorElement}
             <p>You don't have an account? <Link to='/register ' className='text-danger pe-auto text-decoration-none 'onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget your password? <Link to='/register ' className='text-primary pe-auto text-decoration-none 'onClick={resetPassword}>Reset Password</Link></p>
+            <p>Forget your password? <Link to='/register ' className='text-danger pe-auto text-decoration-none 'onClick={resetPassword}>Reset Password</Link></p>
             <SocialLogin></SocialLogin>
         </div>
 
     );
 };
 
-export default Login; <h2>Please Login</h2>
+export default Login; 

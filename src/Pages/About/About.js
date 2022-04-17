@@ -3,7 +3,14 @@ import React from 'react';
 const About = () => {
     return (
         <div className='container'>
-            <h2>This is About Us</h2>
+            <div>
+                <img src="" alt="" />
+            </div>
+            <div>
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis cum cumque minus magni nemo nulla beatae dolores vel nisi voluptatibus mollitia, eveniet voluptas, illum culpa laudantium ea saepe. Quidem accusantium, quasi cupiditate obcaecati impedit nisi tenetur, culpa quaerat nesciunt placeat iure dolor magni! Recusandae in, iure explicabo similique expedita optio commodi itaque voluptates harum cumque architecto ipsam, voluptatem soluta, nesciunt quod sunt eos dolores rerum necessitatibus quibusdam temporibus debitis nemo. Dolor, temporibus aspernatur nostrum illo enim autem mollitia cumque dicta eos nam distinctio nulla sit necessitatibus dolores, omnis repellat doloremque nobis obcaecati fuga. Sunt, mollitia! Porro magni veritatis enim!</p>
+                
+            </div>
         </div>
     );
 };
