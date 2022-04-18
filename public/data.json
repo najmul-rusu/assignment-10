@@ -1,23 +1,41 @@
 [
-    {
+  {
       "id": "1",
-      "img": "https://i.ibb.co/hmQZ7Mq/service-1.png",
-      "prics": 4000,
-      "name": "Cox's Bazar",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
-    },
-    {
+      "name": "STANDARD",
+      "price": 29,
+      "description": [
+          "Cardio",
+          "Swimming Pool",
+          "Gym",
+          "Group Lessons",
+          "Aerobics",
+          "Crossfit"
+      ]
+  },
+  {
       "id": "2",
-      "img": "https://i.ibb.co/1mq4n4L/service-2.png",
-      "prics": 5500,
-      "name": "Bandarban",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
-    },
-    {
+      "name": "PREMIUM",
+      "price": 49,
+      "description": [
+          "Cardio",
+          "Swimming Pool",
+          "Gym",
+          "Group Lessons",
+          "Aerobics",
+          "Crossfit"
+      ]
+  },
+  {
       "id": "3",
-      "img": "https://i.ibb.co/KmcPbKD/service-3.png",
-      "prics": 5000,
-      "name": "Saint-Martin",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using"
-    }
-  ]
+      "name": "PLATINUM",
+      "price": 99,
+      "description": [
+          "Cardio",
+          "Swimming Pool",
+          "Gym",
+          "Group Lessons",
+          "Aerobics",
+          "Crossfit"
+      ]
+  }
+]

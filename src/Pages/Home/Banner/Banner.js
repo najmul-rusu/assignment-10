@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import banner1 from '../../../Images/banner-1.png';
-import banner2 from '../../../Images/banner-2.png';
-import banner3 from '../../../Images/banner-3.png';
+import banner1 from '../../../Images/top-banner-01.png';
+import banner2 from '../../../Images/top-banner-02.png';
 import './Banner.css'
 
 const Banner = () => {
@@ -36,20 +35,7 @@ const Banner = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-                <img 
-                    className="d-block w-100 tales"
-                    src={banner3}
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Saint Martin Tour</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
+            
         </Carousel>
     );
 };
