@@ -10,10 +10,13 @@ const About = () => {
             <div className='w-50'>
                 <img className='about-img' src={aboutImg} alt="" />
             </div>
-            <div className='w-50 px-4 '>
+            <div className='w-50 px-4'>
                 <h2>About Me</h2>
-                <p><b>Hello!</b> <br /> I am <span className='text-warning'><b>Abu Naem</b></span>, I work with wordpress, customize the theme, make woocommerce website or any website with wordpress.I have about 4 years working experience with wordpress on fiverr.But I want to learn more to develop skills.My dream is to be a successful freelancer.I like to work from home and do freelancing, so I want to improve my skill.</p>
-                <button className='btn btn-warning text-white fw-semibold'>Call Now</button>
+                <p><b>Hey,</b> <br /> My name is <span className='text-warning'><b>Najmul Hasan</b></span>, I'm a Freelancer Web Designer and WordPress Developer.
+
+My job is to build your website so that it is functional and user-friendly but at the same time attractive. Keeping in mind scalability and clean code that is maintainable and readable.
+
+I've worked with companies of all shapes and sizes, so contact me if you'd like to work together on your next project. By night as a Freelance Web Designer and Word Press Developer, I spend my time working on freelance projects and building my own products.</p>
             </div>
         </div>
     );

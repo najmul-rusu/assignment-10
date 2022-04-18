@@ -1,41 +1,23 @@
 [
-  {
+    {
       "id": "1",
-      "name": "STANDARD",
-      "price": 29,
-      "description": [
-          "Cardio",
-          "Swimming Pool",
-          "Gym",
-          "Group Lessons",
-          "Aerobics",
-          "Crossfit"
-      ]
-  },
-  {
+      "img": "https://i.ibb.co/X48LYCr/service-1.png",
+      "prics": 4000,
+      "name": "Chitwan",
+      "description": "Flight from Dhaka to Don Mueang or Suvarnabhumi Airport Airport. On arrival to Airport, you will be welcomed by our representative and transferred to hotel for check in. A COVID test will have to be done."
+    },
+    {
       "id": "2",
-      "name": "PREMIUM",
-      "price": 49,
-      "description": [
-          "Cardio",
-          "Swimming Pool",
-          "Gym",
-          "Group Lessons",
-          "Aerobics",
-          "Crossfit"
-      ]
-  },
-  {
+      "img": "https://i.ibb.co/3zPYPQS/service-2.png",
+      "prics": 5500,
+      "name": "Bangkok",
+      "description": "Elephant Breeding center visit (after breakfast we will go jungle walk, bird watching, and canoe.You will see lots of crocodiles while canoeing and some rhino with their baby.)"
+    },
+    {
       "id": "3",
-      "name": "PLATINUM",
-      "price": 99,
-      "description": [
-          "Cardio",
-          "Swimming Pool",
-          "Gym",
-          "Group Lessons",
-          "Aerobics",
-          "Crossfit"
-      ]
-  }
-]
+      "img": "https://i.ibb.co/r26H9j4/service-3.png",
+      "prics": 5000,
+      "name": "Andaman Islands",
+      "description": " Arrival at airport and our airport representative will be meeting you and brief a brief orientation, and transfer to your booked hotel/ Resort."
+    }
+  ]
