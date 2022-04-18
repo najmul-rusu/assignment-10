@@ -1,6 +1,6 @@
 # EveDiva Travel Agency
 
-Live Project Link [https://cycling-reviews.netlify.app/]
+Live Project Link [https://gym-trainer-f57af.web.app/]
 
 ## Include in this project
 * Made with React & React Bootstrap.
