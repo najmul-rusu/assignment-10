@@ -5,7 +5,7 @@ import Benefit from './Benefit/Benefit';
 import './Service.css';
 
 const Service = ({ service }) => {
-    const {id, name, img, price, description } = service;
+    const {id, name, price, description } = service;
     const navigate =useNavigate();
     const handlenavigateToServiceDetail =id =>{
         navigate(`/service/${id}`)
@@ -22,12 +22,13 @@ const Service = ({ service }) => {
                         </div>
                         {
                             description.map(benefit =>
-                                <Benefit benefit={benefit}>
+                                <Benefit 
+                                benefit={benefit}>
                                 </Benefit>)
                         }
                     </Card.Body>
                     <div className='mx-auto'>
-                        <Button className="text-white">Become A Member</Button>
+                        <Button className="text-white" onClick={()=>handlenavigateToServiceDetail(id)}>Become A Member</Button>
                     </div>
                 </Card>
             </CardGroup>
