@@ -19,8 +19,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Cox's Bazar Tour</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Chitwan</h3>
+                    <p>The Ultimate Nepal Jungle Experience</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -31,8 +31,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Bandarban Tour</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>The Last Resort</h3>
+                    <p>Be brave and bungee</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
