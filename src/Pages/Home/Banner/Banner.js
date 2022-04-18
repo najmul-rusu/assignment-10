@@ -4,6 +4,7 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../Images/banner-1.png';
 import banner2 from '../../../Images/banner-2.png';
 import banner3 from '../../../Images/banner-3.png';
+import './Banner.css'
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -14,7 +15,7 @@ const Banner = () => {
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 tales"
                     src={banner1}
                     alt="First slide"
                 />
@@ -25,7 +26,7 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block w-100 tales"
                     src={banner2}
                     alt="Second slide"
                 />
@@ -36,8 +37,8 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img style={{height:'auto'}}
-                    className="d-block w-100"
+                <img 
+                    className="d-block w-100 tales"
                     src={banner3}
                     alt="Third slide"
                 />
