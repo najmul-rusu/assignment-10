@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import banner1 from '../../../Images/banner-1.jpg';
-import banner2 from '../../../Images/banner-2.jpg';
-import banner3 from '../../../Images/banner-3.jpg';
+import banner1 from '../../../Images/banner-1.png';
+import banner2 from '../../../Images/banner-2.png';
+import banner3 from '../../../Images/banner-3.png';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -19,7 +19,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
+                    <h3>Cox's Bazar Tour</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -31,7 +31,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
+                    <h3>Bandarban Tour</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -43,7 +43,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h3>Saint Martin Tour</h3>
                     <p>
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>

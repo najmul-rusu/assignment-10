@@ -1,10 +1,12 @@
 import React from 'react';
+import aboutImg from '../../Images/naem.jpg'
+import './About.css'
 
 const About = () => {
     return (
-        <div className='container'>
+        <div className='container d-flex '>
             <div>
-                <img src="" alt="" />
+                <img className='about-img' src={aboutImg} alt="" />
             </div>
             <div>
                 <h2>About Me</h2>
